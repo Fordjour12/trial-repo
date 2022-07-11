@@ -10,7 +10,7 @@ app.get("/", (request, response) => {
 	response.send(`Hello ${target}`);
 });
 
-const port = parseINT(process.env.PORT);
+const port = process.env.PORT;
 
 app.listen(port, () => {
 	console.log("Hello World listening on port", port);
